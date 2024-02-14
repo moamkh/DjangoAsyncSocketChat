@@ -44,7 +44,7 @@ chatMessageSend.onclick = function() {
 let chatSocket = null;
 
 function connect() {
-    chatSocket = new WebSocket("ws://" + window.location.host + "/ws/chat/" + roomName + "/");
+    chatSocket = new WebSocket("ws://" + window.location.host + "/ws/chat/" + roomName + "/:80");
 
     chatSocket.onopen = function(e) {
         console.log("Successfully connected to the WebSocket.");
