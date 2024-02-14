@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1']
 
 
 # Application definition
@@ -80,6 +80,7 @@ LOGIN_REDIRECT_URL = "/chat/"
 LOGOUT_REDIRECT_URL = "login"
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+
 CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
@@ -88,6 +89,7 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
