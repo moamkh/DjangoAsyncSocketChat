@@ -6,64 +6,93 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-      }
-      
-      header {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      
-      header span {
-        margin-right: 20px;
-      }
-      
-      header a {
-        color: #fff;
-        text-decoration: none;
-      }
-      
-      main {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      
-      h2 {
-        text-align: center;
-      }
-      
-      .container {
-        margin-top: 20px;
-      }
-      
-      #roomInput {
-        margin-bottom: 10px;
-      }
-      
-      #roomConnect {
-        width: 100%;
-        margin-top: 10px;
-      }
-      
-      #roomSelect {
-        height: 300px;
-        width: 100%;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-      }
+  body {
+    font-family: sans-serif; /* Use a more modern default font */
+    background-color: #f3f3f3; /* Slightly lighter background */
+    margin: 0;
+    padding: 1rem; /* Add slight padding */
+  }
+  
+  header {
+    background-color: #343a40; /* Darker blue for contrast */
+    color: #fff;
+    padding: 1rem 2rem; /* Consistent padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header span {
+    margin-right: 1rem; /* Consistent spacing */
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem; /* Use rem for responsiveness */
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .container {
+    margin-top: 2rem;
+  }
+  
+  #roomInput {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem; /* Use rem for responsiveness */
+    padding: 0.75rem 1rem; /* Consistent padding */
+  }
+  
+  #roomInputHelp {
+    margin-top: 0.5rem; /* Spacing for better readability */
+    font-size: 0.875rem; /* Smaller font for help text */
+    color: #777; /* Muted color */
+  }
+  
+  #roomConnect {
+    width: 100%;
+    background-color: #4CAF50; /* Green button */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1rem; /* Consistent padding */
+    border-radius: 0.5rem; /* Use rem for responsiveness */
+  }
+  
+  #roomSelect {
+    height: 300px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem; /* Use rem for responsiveness */
+    padding: 1rem;
+  }
+  
+  /* Bootstrap overrides */
+  .col-12 {
+    padding-right: 1rem; /* Add right padding for even spacing */
+    padding-left: 1rem; /* Add left padding for even spacing */
+  }
+  
+  @media (max-width: 768px) {
+    .col-12.col-md-8 {
+      flex-grow: 2; /* Use flex-grow for responsive layout */
+    }
+    .col-12.col-md-4 {
+      flex-grow: 1; /* Use flex-grow for responsive layout */
+    }
+  }
+  
       
 </style>
 {% endblock %}

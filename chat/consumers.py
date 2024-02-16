@@ -106,7 +106,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
     async def receive(self, text_data=None, bytes_data=None):
         text_data_json = json.loads(text_data)
         message = text_data_json['message']
-        print(f'{self.user}{message}')
+        print(f'{self.user} : {message}')
         if not self.user.is_authenticated:
             return
         if message.startswith('/pm '):
@@ -144,12 +144,12 @@ class ChatConsumer(AsyncWebsocketConsumer):
         await self.create_message_obj(message)
         
 
-    async def chat_message(self, event):
-        print(event)
+    async def chat_message(self, event:dict):
+        print(event.keys())
         await self.send(text_data=json.dumps(event))
 
     async def user_join(self, event):
-        print(event)
+        print(type(event))
         await self.send(text_data=json.dumps(event))
 
     async def user_leave(self, event):
