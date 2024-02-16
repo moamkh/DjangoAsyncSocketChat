@@ -8,9 +8,9 @@
 ### 1. have docker-compose and python on :
 This document guides you through installing Docker, Docker Compose, and Python on Windows, macOS, and Linux.These tools are essential for developing and deploying applications in containerized environments.Important: Please make sure you have administrator privileges on your system before proceeding.Choosing the Right Version
     
-    Docker: Check the latest supported version for your operating system on the official Docker website: https://docs.docker.com/install/
-    Docker Compose: Ensure your chosen Docker version is compatible with the Docker Compose version. Refer to the Compose documentation: https://docs.docker.com/compose/install/
-    Python: Consider your project requirements and choose a compatible version (e.g., Python 3.x is recommended). Check the official Python website: https://www.python.org/downloads/
+-Docker: Check the latest supported version for your operating system on the official Docker website: https://docs.docker.com/install/
+-Docker Compose: Ensure your chosen Docker version is compatible with the Docker Compose version. Refer to the Compose documentation: https://docs.docker.com/compose/install/
+-Python: Consider your project requirements and choose a compatible version (e.g., Python 3.x is recommended). Check the official Python website: https://www.python.org/downloads/
     
 #### Installation Instructions
     
