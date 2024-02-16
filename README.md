@@ -29,7 +29,7 @@
     (New-Object System.Net.WebClient).DownloadFile('https://github.com/docker/compose/releases/download/v2.7.1/docker-compose-Windows-x86_64.exe', 'docker-compose.exe')
     Move-Item docker-compose.exe -Destination c:\Users\<your_username>\AppData\Local\Docker\
     
-    Use code with caution.
+
     
     macOS:
     
